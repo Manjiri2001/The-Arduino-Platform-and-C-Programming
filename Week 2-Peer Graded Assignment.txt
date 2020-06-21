@@ -1,0 +1,20 @@
+Write a program in C that computes and prints out the first six digits in the Fibonacci sequence. Look up the definition of the Fibonacci sequence if you don't know it. The first two numbers in the sequence are 0 and 1, but your program should compute the next four digits. Make sure your program compiles using gcc.
+
+Then, save a text version of your program. Copy and paste the text of your program in the box here. 
+
+//Fibonacci Series C Program .
+#include<stdio.h>
+int main()
+{   
+     int n1=0 ,n2=1 ,n3 ,i ;
+         printf("\n Fibonacci Series upto 6th element is: ") ;
+        printf("\n%d\n%d",n1,n2);
+        for(i=2;i<6;++i)
+       {
+          n3=n1+n2;
+          printf("\n%d",n3);
+          n1=n2;
+          n2=n3;
+        } 
+      return 0;
+  }
